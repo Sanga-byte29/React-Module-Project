@@ -102,3 +102,49 @@
 .sendIcon {
   font-size: 1.2rem;
 }
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .groupName {
+    font-size: 1rem;
+  }
+
+  /* Notes Container */
+  .notesContainer {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: calc(100vh - 140px);
+  }
+
+  .noteBox {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+
+  .timestamp {
+    font-size: 0.7rem;
+  }
+
+  /* Input Box */
+  .inputContainer {
+    padding: 10px;
+  }
+
+  .inputBox {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .sendButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}

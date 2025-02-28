@@ -43,7 +43,7 @@
   font-size: 1rem;
   font-weight: 500;
   color: #333;
-  white-space: nowrap;  
+  white-space: nowrap;
   /* overflow: hidden;   */
   /* text-overflow: ellipsis; Adds "..." if text is too long */
 }
@@ -59,3 +59,196 @@
     font-size: 1rem;
     margin-bottom: 15px;
   } */
+
+/* RESPONSIVE STYLES - MOBILE FIXES */
+@media screen and (max-width: 768px) {
+  /* Hide Main Content on Mobile */
+  .mainContent {
+    display: none !important;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /* Expand Sidebar to Full Screen */
+  .sidebar {
+    width: 100vw !important;
+    height: 100vh !important;
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  /* Adjust Contact List */
+  .contactList {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-bottom: 10px;
+  }
+
+  /* Contact Item Styles */
+  .contactItem {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .contactIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust Add Button */
+  .addButtonContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .addButton {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  /* Notes Panel */
+  .notesPanel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header Styling */
+  .header {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .groupName {
+    font-size: 1rem;
+  }
+
+  /* Notes Container */
+  .notesContainer {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+  }
+
+  /* Individual Note Box */
+  .noteBox {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+
+  .timestamp {
+    font-size: 0.7rem;
+  }
+
+  /* Input Box and Send Button */
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #001f99;
+  }
+
+  .inputBox {
+    width: 85%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+
+  .sendButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /* Group Modal */
+  .overlay {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .input {
+    padding: 10px;
+  }
+
+  .createButton,
+  .closeButton {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  /* Remove Main Content in Mobile */
+  .mainContent {
+    display: none !important;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /* Expand Sidebar */
+  .sidebar {
+    width: 100vw;
+    height: 100vh;
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  /* Adjust Contact List */
+  .contactList {
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+
+  /* Adjust Buttons */
+  .addButtonContainer {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .addButton {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  /* Notes Panel */
+  .notesPanel {
+    height: 100vh;
+  }
+
+  /* Notes Container */
+  .notesContainer {
+    padding: 10px;
+  }
+
+  /* Input Box */
+  .inputContainer {
+    padding: 12px;
+  }
+
+  .inputBox {
+    font-size: 0.9rem;
+  }
+
+  /* Modal */
+  .modal {
+    width: 90%;
+  }
+}
